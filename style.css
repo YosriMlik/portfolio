@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(17, 237, 237);
+    background: linear-gradient(155deg,
+    rgba(17, 237, 237, 0.3) 0%,
+    rgba(237, 89, 222, 0.1) 0%,
+    rgba(17, 237, 237, 0.3) 66%,
+    rgba(237, 89, 222, 0.3) 85%
+    );
+    position: relative;
+}
+
+.container:after {
+    position: absolute;
+    top: 18%;
+    right: 15%;
+    content: "";
+    height: 550px;
+    width: 550px;
+    background-color: #104998;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: .5;
+}
+
+/* Dialog Styles */
+dialog {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; /* Adjust width as needed */
+    padding: 15px 20px 20px 25px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+dialog img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Header Styles */
+.header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.98) !important; /* 90% opacity white */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo,
+.header button {
+    flex: 0 0 auto; /* Keep their widths as-is */
+}
+
+.logo img {
+    width: 10rem;
+    height: 2.5rem;
+}
+
+/* Navigation Menu Styles */
+.header ul.nav-menu {
+    position: static; /* Remove absolute positioning */
+    transform: none; /* Remove transform */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the menu items */
+    align-items: center; /* Vertically center the items */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove default list styling */
+}
+
+.header ul.nav-menu li {
+    margin: 0 25px;
+}
+
+.header ul.nav-menu li a {
+    color: #1c1c1c;
+    text-decoration: none; /* Remove underline */
+    position: relative;
+}
+
+.header ul.nav-menu li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1c1c1c;
+    transition: 0.6s;
+}
+
+.header ul.nav-menu li a:hover::after {
+    width: 100%;
+}
+
+/* Button Styles */
+button {
+    cursor: pointer;
+    padding: 10px 18px;
+    background: rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 1s;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+button::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip-path: circle(0% at 50% 100%);
+    transition: .6s;
+    background-color: #1c1c1c;
+    z-index: -1;
+}
+
+button:hover::after {
+    clip-path: circle(130% at 50% 100%);
+}
+
+button:hover {
+    color: #fff;
+}
+
+button i {
+    transform: rotate(-45deg);
+    margin-left: 5px;
+}
+
+/* Hamburger Menu Icon */
+.header .fa-bars {
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #1c1c1c;
+    padding: 12px;
+    border-radius: 3px;
+    transition: .6s;
+    border: 2px solid #1c1c1c;
+    display: none;
+}
+
+.header .fa-bars:hover {
+    color: #1c1c1c;
+    background-color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 80px 8% 0; /* Add 80px padding to the top */
+}
+
+.hero .content {
+    min-height: 650px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+}
+
+.hero .content h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    line-height: 4.2rem;
+    margin: 10px 0;
+    margin-top: 2rem;
+}
+
+.hero .content p {
+    letter-spacing: 1px;
+    width: 70%;
+    margin: 10px 0;
+    margin-bottom: 2rem;
+}
+
+.hero .content button {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.hero .content button::after {
+    background-color: #000;
+}
+
+.hero-image {
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    margin-top: 3rem;
+}
+
+.hero-image img {
+    height: 90%;
+    width: 90%;
+}
+
+/* Services Section */
+.service {
+    min-height: 680px;
+    width: 100%;
+    display: flex;
+    padding: 5% 8%;
+    flex-direction: column;
+    background: rgb(234, 250, 26);
+    background: linear-gradient(155deg,
+    rgba(234,250,26,0.05) 0%,
+    rgba(237,89,222,0.05) 39%,
+    rgba(41,200,241,0.05) 66%,
+    rgba(237,89,222,0.05) 100%,
+    transparent
+    );
+}
+
+.service h1 {
+    padding-top: 50px;
+    margin-bottom: 28px;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.service .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service .cards .card img {
+    width: 100px;
+    height: 100px;
+}
+
+.service .cards .card {
+    height: 420px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8% 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.cards .card h2 {
+    font-weight: 600;
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+
+.cards .card .content img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Resume Section */
+.resume {
+    /* margin-top: 150px; */
+}
+
+.resume-section .resume .detail h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-top: 120px;
+}
+
+.resume-section .resume .detail .card-wrapper .card {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.resume-section .resume .detail .card-wrapper .card .description {
+    width: 600px;
+}
+
+.resume-section .resume .detail .card-wrapper .card .description h2 {
+    font-size: 2rem;
+}
+
+/* Project Description Styles */
+.resume-section .resume .detail .card-wrapper .card .description ul.project-description {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-section .resume .detail .card-wrapper .card .description ul.project-description li {
+    margin: 10px 0;
+}
+
+.resume-section .resume .detail .card-wrapper .card .description ul.project-description li p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Swiper Styles */
+.swiper {
+    width: 500px;
+    height: 280px; /* Adjust height as needed */
+    margin-right: 0 !important;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Background color for slides */
+    border-radius: 0px; /* Rounded corners */
+    overflow: hidden; /* Ensure images don't overflow */
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: contain; /* Ensure images cover the slide */
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #1c1c1c !important; /* Button color */
+    background-color: transparent !important; /* Button background */
+    width: 40px !important;
+    height: 40px !important;
+}
+
+/* Pagination */
+.swiper-pagination-bullet {
+    background-color: #1c1c1c; /* Pagination bullet color */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #104998; /* Active bullet color */
+}
+
+/* Media Queries */
+@media (max-width: 1100px) {
+    .header ul.nav-menu {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        flex-direction: column; /* Stack items vertically */
+        background-color: #fff;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .header ul.nav-menu.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .header ul.nav-menu li {
+        margin: 10px 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header .fa-bars {
+        display: block; /* Show hamburger menu */
+    }
+
+    .header ul.nav-menu li:last-child {
+        border: none;
+    }
+
+    .container:after {
+        right: 5%;
+    }
+
+    .hero-image {
+        width: 60%;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image, .hero .content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero .content {
+        min-height: 460px;
+        margin-top: 0;
+        padding: 5% 0;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .container:after {
+        top: 50%;
+    }
+
+    .service .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center cards horizontally */
+        justify-content: center; /* Center cards vertically */
+        gap: 25px;
+    }
+
+    .service .cards .card {
+        width: 90%; /* Adjust width to fit the screen */
+        max-width: 400px; /* Optional: Set a max-width for better readability */
+        margin: 0 auto; /* Center the card within its container */
+    }
+
+    .swiper {
+        width: 100%; /* Make the swiper full width */
+        height: auto; /* Allow the swiper to grow based on content */
+    }
+
+    .swiper-slide img {
+        max-height: 200px; /* Limit image height for better fit */
+        object-fit: contain; /* Ensure images fit properly */
+    }
+
+    .service h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .resume-section .resume .detail .card-wrapper .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-section .resume .detail .card-wrapper .card .description {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .swiper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .header .logo img {
+        width: 160px;
+    }
+}
