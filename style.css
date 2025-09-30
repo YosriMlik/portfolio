@@ -505,8 +505,7 @@ button i {
 
 @media (max-width: 768px) {
     .hero {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 80px 15px 0;
     }
 
     .service {
