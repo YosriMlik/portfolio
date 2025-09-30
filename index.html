@@ -1,387 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="favicon" href="./img/logo/logo_small_icon_only.png" type="image/x-icon">
-    <link rel="icon" href="./img/logo/logo_small_icon_only.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="favicon"
+      href="./img/logo/logo_small_icon_only.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="./img/logo/logo_small_icon_only.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Yosri Mlik</title>
-</head>
-<body>
+  </head>
+  <body>
     <dialog id="modal">
-        <p style="width: 100%; text-align: right; cursor: pointer;">
-            <span onclick="document.getElementById('modal').close()" style="font-size: 1.2rem;">❌</span>
-            <br>
-        </p>
-        <h2>
-            <img src="./img/phone-call.svg" alt="">
-            <a href="tel:+21626644323"> 26644323 </a>
-        </h2>
-        <br>
-        <h2>
-            <img src="./img/envelope.svg" alt="">
-            <a href="mailto:ymlik24@gmail.com?subject=Hello%20Yosri&body=Hi%20Yosri," target="_blank"> ymlik24@gmail.com</a>
-        </h2>
-        <br>
-        <h2>
-            <img src="./img/Linkedin-Logo--Streamline-Radix.svg" alt="">
-            <a target="_blank" href="https://www.linkedin.com/in/yosri-mlik">Linkedin</a>
-        </h2>
+      <p style="width: 100%; text-align: right; cursor: pointer">
+        <span
+          onclick="document.getElementById('modal').close()"
+          style="font-size: 1.2rem"
+          >❌</span
+        >
+        <br />
+      </p>
+      <h2>
+        <img src="./img/phone-call.svg" alt="" />
+        <a href="tel:+21626644323"> 26644323 </a>
+      </h2>
+      <br />
+      <h2>
+        <img src="./img/envelope.svg" alt="" />
+        <a
+          href="mailto:ymlik24@gmail.com?subject=Hello%20Yosri&body=Hi%20Yosri,"
+          target="_blank"
+        >
+          ymlik24@gmail.com</a
+        >
+      </h2>
+      <br />
+      <h2>
+        <img src="./img/Linkedin-Logo--Streamline-Radix.svg" alt="" />
+        <a target="_blank" href="https://www.linkedin.com/in/yosri-mlik"
+          >Linkedin</a
+        >
+      </h2>
     </dialog>
-    
+
     <div class="container">
-        <div class="header">
-            <div class="logo">
-                <img src="./img/logo/logo_small_enhanced.png" alt="My Logo">
-            </div>
-            <ul class="nav-menu">
-                <li><a class="nav-link" href="#">About</a></li>
-                <li><a class="nav-link" href="#services">Services</a></li>
-                <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" target="_blank" href="https://github.com/YosriMlik/">Github</a></li>
-            </ul>
-            <button onclick="document.getElementById('modal').showModal()">Contact <i class="fa fa-arrow-right"></i></button>
-            <i class="fa fa-bars"></i>
+      <div class="header">
+        <div class="logo">
+          <img src="./img/logo/logo_small_enhanced.png" alt="My Logo" />
         </div>
-        <div class="hero">
-            <div class="content">
-                <h1>Crafting Digital Experiences That Inspire and Innovate</h1>
-                <p>Hi, I’m Yosri Mlik. A Full-Stack Developer specializing in web and mobile applications. 
-                    <br>I turn ideas into seamless, user-friendly solutions that make an impact.</p>
-                <button onclick="document.getElementById('modal').showModal()">Say Hello <i class="fa fa-arrow-right"></i></button>
-            </div>
-            <div class="hero-image">
-                <!-- <img src="Hero 1.jpeg" alt="Hero Image"> -->
-            </div>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="#">About</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li>
+            <a
+              class="nav-link"
+              target="_blank"
+              href="https://github.com/YosriMlik/"
+              >Github</a
+            >
+          </li>
+        </ul>
+        <button onclick="document.getElementById('modal').showModal()">
+          Contact <i class="fa fa-arrow-right"></i>
+        </button>
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="hero">
+        <div class="content">
+          <h1>Crafting Digital Experiences That Inspire and Innovate</h1>
+          <p>
+            Hi, I’m Yosri Mlik. A Full-Stack Developer specializing in web and
+            mobile applications. <br />I turn ideas into seamless, user-friendly
+            solutions that make an impact.
+          </p>
+          <button onclick="document.getElementById('modal').showModal()">
+            Say Hello <i class="fa fa-arrow-right"></i>
+          </button>
         </div>
+        <div class="hero-image">
+          <!-- <img src="Hero 1.jpeg" alt="Hero Image"> -->
+        </div>
+      </div>
     </div>
     <div class="service" id="services">
-        <h1>Provided Services ☑️</h1>
-        <div class="cards">
-            <div class="card">
-                <img src="./img/code_logo.png" alt="">
-                <div class="content">
-                    <h2>Front-End & UI</h2>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" />
-                    <br>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+      <h1>Provided Services ☑️</h1>
+      <div class="cards">
+        <div class="card">
+          <img src="./img/code_logo.png" alt="" />
+          <div class="content">
+            <h2>Front-End & UI</h2>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+            />
+            <br />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+            />
+          </div>
+        </div>
+        <div class="card card-wide">
+          <img src="./img/code_logo.png" alt="" />
+          <div class="content">
+            <h2>Back-End & Fullstack Frameworks</h2>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+            />
 
-                </div>
-            </div>
-            <div class="card card-wide">
-                <img src="./img/code_logo.png" alt="">
-                <div class="content">
-                    <h2>Back-End & Fullstack Frameworks</h2>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/60/Hono-logo.svg"
+              alt=""
+              srcset=""
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg"
+            />
 
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
+            />
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" /> -->
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/code_logo.png" alt="" />
+          <div class="content">
+            <h2>Databases</h2>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+            />
 
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Hono-logo.svg" alt="" srcset="">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/code_logo.png" alt="" />
+          <div class="content">
+            <h2>Mobile</h2>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/code_logo.png" alt="" />
+          <div class="content">
+            <h2>Desktop</h2>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tauri/tauri-original.svg"
+            />
 
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
-                    <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" /> -->
-                    
-                </div>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/code_logo.png" alt="" />
+          <div class="content">
+            <h2>DevOps</h2>
+            <div class="icon-container">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+              />
             </div>
-            <div class="card">
-                <img src="./img/code_logo.png" alt="">
-                <div class="content">
-                    <h2>Databases</h2>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
-                    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
-          
+          </div>
+        </div>
+      </div>
+      <div class="resume-section" id="projects">
+        <div class="resume">
+          <div class="detail">
+            <h1>Projects 🛠️</h1>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="description">
+                  <h2>Bookshop</h2>
+                  <ul class="project-description">
+                    <li>
+                      <p>&#9679; 07/2022</p>
+                      <p>&#9679; Creation of a book sales site</p>
+                      <p>&#9679; Technologies: Flask, Bootstrap, Vue JS</p>
+                      <p>
+                        &#9679; Link :
+                        <a
+                          style="color: blue"
+                          href="https://reedzbookshop.pythonanywhere.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >reedzbookshop.pythonanywhere.com</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./img/code_logo.png" alt="">
-                <div class="content">
-                    <h2>Mobile</h2>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />
-                </div>
-            </div>
-            <div class="card">
-                <img src="./img/code_logo.png" alt="">
-                <div class="content">
-                    <h2>Desktop</h2>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tauri/tauri-original.svg" />
-
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-                </div>
-            </div>
-            <div class="card">
-                <img src="./img/code_logo.png" alt="">
-                <div class="content">
-                    <h2>DevOps</h2>
-                    <div class="icon-container">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                <div class="swiper">
+                  <!-- Slider container -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img
+                        src="./img/Bookshop 1.png"
+                        alt="Project Screenshot 1"
+                      />
                     </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./img/Bookshop 2.png"
+                        alt="Project Screenshot 2"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./img/BookshopPanier.png"
+                        alt="Project Screenshot 3"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./img/BookshopadminPage.png"
+                        alt="Project Screenshot 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Add navigation buttons -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <!-- Add pagination -->
+                  <div class="swiper-pagination"></div>
                 </div>
-            </div>
-        </div>
-        <div class="resume-section" id="projects">
-            <div class="resume">
-                <div class="detail" >
-                    <h1>Projects 🛠️</h1>
-                    <div class="card-wrapper">
+              </div>
 
-                        <div class="card">
-                            <div class="description">
-                                <h2>Bookshop</h2>
-                                <ul class="project-description">
-                                    <li>
-                                        <p>&#9679;  07/2022</p>
-                                        <p>&#9679;  Creation of a book sales site</p>
-                                        <p>&#9679;  Technologies: Flask, Bootstrap, Vue JS</p>
-                                        <p>&#9679;   Link : <a style="color: blue;" href="https://reedzbookshop.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">reedzbookshop.pythonanywhere.com</a></p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="swiper">
-                                <!-- Slider container -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <img src="./img/Bookshop 1.png" alt="Project Screenshot 1">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/Bookshop 2.png" alt="Project Screenshot 2">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/BookshopPanier.png" alt="Project Screenshot 3">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/BookshopadminPage.png" alt="Project Screenshot 3">
-                                    </div>
-                                </div>
-                                <!-- Add navigation buttons -->
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <!-- Add pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
+              <br /><br /><br /><br />
 
-                        <br><br><br><br>
-
-                        <div class="card">
-                            <div class="description">
-                                <h2>WiFi Password App</h2>
-                                <ul class="project-description">
-                                    <li>
-                                        <p>&#9679;  04/2024</p>
-                                        <p>&#9679;  Retrieve saved WiFi passwords securely</p>
-                                        <p>&#9679;  Generate scannable QR codes for quick smartphone connections</p>
-                                        <p>&#9679;  Simple and intuitive user interface</p>
-                                        <p>&#9679;  Technologies : Electron JS</p>
-                                        <p>&#9679;   Download Link : <a style="color: blue;" href="https://github.com/YosriMlik/wifi-password-app/releases/tag/Wifi-password-app" target="_blank" rel="noopener noreferrer">github.com/YosriMlik/wifi-password-app</a></p>   
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="swiper">
-                                <!-- Slider container -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide" style="background-color: transparent !important;">
-                                        <img src="./img/wifi.png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Add navigation buttons -->
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <!-- Add pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-
-                        <br><br><br><br>
-
-                        <div class="card">
-                            <div class="description">
-                                <h2>End-of-study project defenses manager</h2>
-                                <ul class="project-description">
-                                    <li>
-                                        <p>&#9679;  07/2023</p>
-                                        <p>&#9679;   A Desktop application for managing end-of-study project 
-                                            <br> 
-                                            defenses</p>
-                                        <p>&#9679;  Client : <a href="https://iit.tn/" target="_blank" rel="noopener noreferrer" style="color: blue;">IIT</a></p>
-                                        <p>&#9679;  Technologies : Tauri (React, Rust, SQLite)</p>
-                                        <p>&#9679;   Repo : <a style="color: blue;" href="https://github.com/YosriMlik/gestion_soutenances/" target="_blank" rel="noopener noreferrer">github.com/YosriMlik/gestion_soutenances</a></p>   
-                                        <p>&#9679;   <a style="color: blue;" href="https://github.com/YosriMlik/gestion_soutenances/releases/tag/beta" target="_blank" rel="noopener noreferrer">Download 🚀</a></p>   
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="swiper">
-                                <!-- Slider container -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <img src="./img/GestionSoutenances.png" alt="Project Screenshot 1">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/AddDefence.png" alt="Project Screenshot 2">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/Defences.png  " alt="Project Screenshot 3">
-                                    </div>
-                                </div>
-                                <!-- Add navigation buttons -->
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <!-- Add pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-
-                        <br><br><br><br>
-                        
-
-                        <div class="card">
-                            <div class="description">
-                                <h2>Live Chat Application</h2>
-                                <ul class="project-description">
-                                    <li>
-                                        <p>&#9679;  Technologies : Go Fiber, React </p>
-                                        <p>&#9679;   Link : <a style="color: blue;" href="https://golang-react-chatapp.onrender.com/" target="_blank" rel="noopener noreferrer">golang-react-chatapp.onrender.com</a></p>   
-                                        <p>&#9679;   Github Repo : <a style="color: blue;" href="https://github.com/YosriMlik/golang-react-chatapp" target="_blank" rel="noopener noreferrer">github.com/YosriMlik/golang-react-chatapp</a></p>   
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="swiper">
-                                <!-- Slider container -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <img src="./img/chat.png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Add navigation buttons -->
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <!-- Add pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-
-                        <br><br><br><br>
-
-                        <div class="card">
-                            <div class="description">
-                                <h2> Basic Django Application</h2>
-                                <ul class="project-description">
-                                    <li>
-                                        <p>&#9679;   A web application created to learn the basics of Django and
-                                            <br>  
-                                            server-side components with HTMX</p>
-                                        <p>&#9679;   Link : <a style="color: blue;" href="https://cbsformulaire.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">cbsformulaire.pythonanywhere.com</a></p>   
-                                        <p>&#9679;   Github Repo : <a style="color: blue;" href="https://github.com/YosriMlik/django-htmx" target="_blank" rel="noopener noreferrer">github.com/YosriMlik/django-htmx</a></p>   
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="swiper">
-                                <!-- Slider container -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <img src="./img/Django 1.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/Django 2.png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Add navigation buttons -->
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <!-- Add pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-
-                        
-                    </div>                    
+              <div class="card">
+                <div class="description">
+                  <h2>WiFi Password App</h2>
+                  <ul class="project-description">
+                    <li>
+                      <p>&#9679; 04/2024</p>
+                      <p>&#9679; Retrieve saved WiFi passwords securely</p>
+                      <p>
+                        &#9679; Generate scannable QR codes for quick smartphone
+                        connections
+                      </p>
+                      <p>&#9679; Simple and intuitive user interface</p>
+                      <p>&#9679; Technologies : Electron JS</p>
+                      <p>
+                        &#9679; Download Link :
+                        <a
+                          style="color: blue"
+                          href="https://github.com/YosriMlik/wifi-password-app/releases/tag/Wifi-password-app"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >github.com/YosriMlik/wifi-password-app</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
                 </div>
+                <div class="swiper">
+                  <!-- Slider container -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div
+                      class="swiper-slide"
+                      style="background-color: transparent !important"
+                    >
+                      <img src="./img/wifi.png" alt="" />
+                    </div>
+                  </div>
+                  <!-- Add navigation buttons -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <!-- Add pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+              <br /><br /><br /><br />
+
+              <div class="card">
+                <div class="description">
+                  <h2>End-of-study project defenses manager</h2>
+                  <ul class="project-description">
+                    <li>
+                      <p>&#9679; 07/2023</p>
+                      <p>
+                        &#9679; A Desktop application for managing end-of-study
+                        project
+                        <br />
+                        defenses
+                      </p>
+                      <p>
+                        &#9679; Client :
+                        <a
+                          href="https://iit.tn/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style="color: blue"
+                          >IIT</a
+                        >
+                      </p>
+                      <p>&#9679; Technologies : Tauri (React, Rust, SQLite)</p>
+                      <p>
+                        &#9679; Repo :
+                        <a
+                          style="color: blue"
+                          href="https://github.com/YosriMlik/gestion_soutenances/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >github.com/YosriMlik/gestion_soutenances</a
+                        >
+                      </p>
+                      <p>
+                        &#9679;
+                        <a
+                          style="color: blue"
+                          href="https://github.com/YosriMlik/gestion_soutenances/releases/tag/beta"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Download 🚀</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper">
+                  <!-- Slider container -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img
+                        src="./img/GestionSoutenances.png"
+                        alt="Project Screenshot 1"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./img/AddDefence.png"
+                        alt="Project Screenshot 2"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./img/Defences.png  "
+                        alt="Project Screenshot 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Add navigation buttons -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <!-- Add pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+              <br /><br /><br /><br />
+
+              <div class="card">
+                <div class="description">
+                  <h2>Live Chat Application</h2>
+                  <ul class="project-description">
+                    <li>
+                      <p>&#9679; Technologies : Go Fiber, React</p>
+                      <p>
+                        &#9679; Link :
+                        <a
+                          style="color: blue"
+                          href="https://golang-react-chatapp.onrender.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >golang-react-chatapp.onrender.com</a
+                        >
+                      </p>
+                      <p>
+                        &#9679; Github Repo :
+                        <a
+                          style="color: blue"
+                          href="https://github.com/YosriMlik/golang-react-chatapp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >github.com/YosriMlik/golang-react-chatapp</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper">
+                  <!-- Slider container -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="./img/chat.png" alt="" />
+                    </div>
+                  </div>
+                  <!-- Add navigation buttons -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <!-- Add pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+              <br /><br /><br /><br />
+
+              <div class="card">
+                <div class="description">
+                  <h2>Basic Django Application</h2>
+                  <ul class="project-description">
+                    <li>
+                      <p>
+                        &#9679; A web application created to learn the basics of
+                        Django and
+                        <br />
+                        server-side components with HTMX
+                      </p>
+                      <p>
+                        &#9679; Link :
+                        <a
+                          style="color: blue"
+                          href="https://cbsformulaire.pythonanywhere.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >cbsformulaire.pythonanywhere.com</a
+                        >
+                      </p>
+                      <p>
+                        &#9679; Github Repo :
+                        <a
+                          style="color: blue"
+                          href="https://github.com/YosriMlik/django-htmx"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >github.com/YosriMlik/django-htmx</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper">
+                  <!-- Slider container -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="./img/Django 1.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/Django 2.png" alt="" />
+                    </div>
+                  </div>
+                  <!-- Add navigation buttons -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <!-- Add pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
-
-
     <script>
-
-        // Fix for VH unit on mobile
+      // Fix for VH unit on mobile - more robust solution
+      function setVH() {
         let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-        window.addEventListener('resize', () => {
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      }
 
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 50) { // Adjust the scroll threshold as needed
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
+      // Set initial value
+      setVH();
 
-        const navLinks = document.querySelectorAll(".nav-link");
-        const menu = document.querySelector(".nav-menu");
-        const bars = document.querySelector(".header .fa-bars");
+      // Update on resize and orientation change
+      window.addEventListener("resize", setVH);
+      window.addEventListener("orientationchange", () => {
+        // Delay to ensure proper height calculation after orientation change
+        setTimeout(setVH, 100);
+      });
 
-        navLinks.forEach(link => {
-            link.addEventListener("click", () => {
-                menu.classList.remove("show");
-            });
-        });
+      // Header scroll effect
+      function updateHeader() {
+        const header = document.querySelector(".header");
+        if (header) {
+          if (window.pageYOffset > 50) {
+            header.style.backgroundColor = "rgba(255, 255, 255, 0.95)";
+            header.style.backdropFilter = "blur(10px)";
+            header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
+            header.classList.add("scrolled");
+          } else {
+            header.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+            header.style.backdropFilter = "blur(5px)";
+            header.style.boxShadow = "none";
+            header.classList.remove("scrolled");
+          }
+        }
+      }
 
-        bars.addEventListener("click", function () {
-            menu.classList.toggle("show");
-        });
+      // Add scroll listener - try multiple approaches
+      window.addEventListener("scroll", function () {
+        updateHeader();
+      });
 
-        // Initialize Swiper
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            loop: true, // Enable infinite loop
-            autoplay: {
-                delay: 3500, // Auto-slide every 3 seconds
-            },
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            // Pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+
+      // Also try with passive option
+      window.addEventListener("scroll", updateHeader, { passive: true });
+
+      // Fallback: Poll for scroll position changes
+      let lastScrollY = 0;
+      setInterval(() => {
+        if (window.pageYOffset !== lastScrollY) {
+          lastScrollY = window.pageYOffset;
+          updateHeader();
+        }
+      }, 100);
+
+      
+
+      const navLinks = document.querySelectorAll(".nav-link");
+      const menu = document.querySelector(".nav-menu");
+      const bars = document.querySelector(".header .fa-bars");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.remove("show");
         });
+      });
+
+      bars.addEventListener("click", function () {
+        menu.classList.toggle("show");
+      });
+
+      // Initialize Swiper
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        loop: true, // Enable infinite loop
+        autoplay: {
+          delay: 3500, // Auto-slide every 3 seconds
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // Pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
-    
-</body>
+  </body>
 </html>
