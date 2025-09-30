@@ -504,16 +504,14 @@ button i {
 }
 
 @media (max-width: 768px) {
-    .header {
-        padding: 0 15px;
-    }
-
     .hero {
-        padding: 80px 15px 0;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .service {
-        padding: 5% 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
