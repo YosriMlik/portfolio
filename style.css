@@ -503,6 +503,20 @@ button i {
     }
 }
 
+@media (max-width: 768px) {
+    .header {
+        padding: 0 15px;
+    }
+
+    .hero {
+        padding: 80px 15px 0;
+    }
+
+    .service {
+        padding: 5% 15px;
+    }
+}
+
 @media (max-width: 500px) {
     .hero .content h1 {
         font-size: 2.5rem;
