@@ -7,7 +7,7 @@
 }
 
 .container {
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     background: rgb(17, 237, 237);
     background: linear-gradient(155deg,
@@ -184,7 +184,7 @@ button i {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     display: flex;
     align-items: flex-start;
